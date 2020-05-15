@@ -1,0 +1,34 @@
+.mat {
+    width: 100%;
+    height: 100%;
+    background: beige;
+  }
+  
+  .right-tie {
+    height: 60px;
+    width: 100px;
+    position: absolute;
+  /*   left:90px; */
+    /* top: 25%; */
+    background-color: #ad1457;
+    transform: skew(-15deg) rotate(-45deg) scaleX(-1);
+    border: 1px solid rgba(#ad1457, 0.6);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 300px 250px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 200px 300px;
+  }
+  
+  .left-tie {
+    height: 60px;
+    width: 100px;
+    position: absolute;
+    /* top: 25%; */
+    background-color: #ad1457;
+    transform: skew(15deg) rotate(45deg) scaleX(1);
+    border: 1px solid rgba(#ad1457, 0.6);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 300px 250px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 200px 300px;
+  }
