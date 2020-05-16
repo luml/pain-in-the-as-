@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+    
 .mat {
     width: 100%;
     height: 100%;

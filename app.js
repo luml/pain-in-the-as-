@@ -1,17 +1,20 @@
-const counts = 10
+const widthCounts = window.innerHeight / 60
+const heightCounts = window.innerWidth / 60
 const unitHeight = 60
-const unitWidth = 100
+const unitWidth = innerWidth / 100
+
+
 
 let mat = document.querySelector(".mat")
 
-for(let i = 0; i < counts; i ++){
+for(let i = 0; i < heightCounts; i ++){
   const left = 100 * (i + 1)
-  // How doesn't delay work ?
+  //TODO How doesn't delay work ?
   setInterval(appendMat(left), 500)
 }
 
 function appendMat(left) {
-    for(let j = 0; j < counts; j ++){
+    for(let j = 0; j <  widthCounts; j ++){
         const bottom = 110 * (j + 1)
     
         let rightTie = document.createElement('div')

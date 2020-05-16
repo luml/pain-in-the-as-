@@ -6,8 +6,32 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="changeColor()">
     <div class="mat"></div>
 </body>
 <script src="./app.js"></script>
+<script>
+    var nIntervId
+ 
+    function changeColor() {
+      nIntervId = setInterval(flashText, 1000)
+    }
+ 
+    function flashText() {
+      let leftTies = document.querySelectorAll('.left-tie')
+      leftTies.forEach(item => {
+        item.style.background = item.style.background == 'red' ? 'blue' : 'red'
+      })
+
+      let rightTies = document.querySelectorAll('.right-tie')
+      rightTies.forEach(item => {
+          item.style.background = item.style.background === 'orange' ? 'deeppink' : 'orange'
+      })
+    }
+ 
+    function stopTextColor() {
+      clearInterval(nIntervId)
+    }
+  </script>
 </html>
+ 
