@@ -18,9 +18,9 @@ function appendMat(left) {
         const bottom = 100 * (j + 1)
     
         let rightTie = document.createElement('div')
-        rightTie.classList.add('right-tie')
+        rightTie.classList.add('right-tie', 'skew')
         let leftTie = document.createElement('div')
-        leftTie.classList.add('left-tie')
+        leftTie.classList.add('left-tie', 'shift')
     
         rightTie.style.top = bottom + 'px'
         rightTie.style.left = left + 'px'

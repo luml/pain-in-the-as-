@@ -14,19 +14,32 @@
     var nIntervId
  
     function changeColor() {
-      nIntervId = setInterval(flashText, 1000)
+      nIntervId = setInterval(flashText, 100)
     }
  
     function flashText() {
       let leftTies = document.querySelectorAll('.left-tie')
       leftTies.forEach(item => {
         item.style.background = item.style.background == 'red' ? 'blue' : 'red'
+        // item.classList.add("shift")
       })
+
+    //   const leftRandom = Math.round(Math.random() * 10)
+    //   if(leftTies[leftRandom] !== undefined) {
+    //       leftTies[leftRandom].classList.add("shift")
+    //   }
+      
 
       let rightTies = document.querySelectorAll('.right-tie')
       rightTies.forEach(item => {
           item.style.background = item.style.background === 'teal' ? 'deeppink' : 'teal'
+        //   item.classList.add("skew")
       })
+
+    //   const rightRandom = Math.round(Math.random() * 10)
+    //   if(rightTies[rightRandom] !== undefined) {
+    //       rightTies[rightRandom].classList.add("skew")
+    //   }
     }
  
     function stopTextColor() {

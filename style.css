@@ -37,3 +37,29 @@
     border-bottom-right-radius: 100px;
     border-bottom-left-radius: 200px 300px;
   }
+
+  .shift {
+    animation: rotating 0.5s ease-in-out infinite;
+  }
+
+  .skew {
+    animation: skewing 0.5s ease-in-out infinite;
+  }
+
+@keyframes rotating {
+  from {
+    transform: rotate(-45deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes skewing {
+  from {
+    transform: scale(0.5)
+  }
+  to {
+    transform: rotate(1);
+  }
+}
