@@ -8,14 +8,14 @@ const unitWidth = innerWidth / 100
 let mat = document.querySelector(".mat")
 
 for(let i = 0; i < heightCounts; i ++){
-  const left = 100 * (i + 1)
+  const left = 90 * (i + 1)
   //TODO How doesn't delay work ?
   setInterval(appendMat(left), 500)
 }
 
 function appendMat(left) {
     for(let j = 0; j <  widthCounts; j ++){
-        const bottom = 110 * (j + 1)
+        const bottom = 100 * (j + 1)
     
         let rightTie = document.createElement('div')
         rightTie.classList.add('right-tie')
