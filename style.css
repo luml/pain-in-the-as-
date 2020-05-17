@@ -17,8 +17,6 @@ body {
     height: 60px;
     width: 100px;
     position: absolute;
-  /*   left:90px; */
-    /* top: 25%; */
     background-color: #ad1457;
     transform: skew(-15deg) rotate(-45deg) scaleX(-1);
     border: 1px solid rgba(#ad1457, 0.6);
@@ -32,7 +30,6 @@ body {
     height: 60px;
     width: 100px;
     position: absolute;
-    /* top: 25%; */
     background-color: #ad1457;
     transform: skew(15deg) rotate(45deg) scaleX(1);
     border: 1px solid rgba(#ad1457, 0.6);
@@ -50,6 +47,10 @@ body {
     animation: skewing 0.5s ease-in-out infinite;
   }
 
+  .shrik {
+    animation: shriking 1.0s ease-in infinite;
+  }
+
 @keyframes rotating {
   from {
     transform: rotate(-45deg);
@@ -64,7 +65,17 @@ body {
     transform: scale(0.5) skew(30deg, 10deg);
   }
   to {
-    transform: rotate(1) skew(-10deg, -30deg);
+    transform: scale(1) skew(-10deg, -30deg);
+  }
+}
+
+@keyframes shriking {
+  from {
+    transform: scale(0.1);
+    background: yellow;
+  }
+  to {
+    /* transform: rotate(); */
   }
 }
 

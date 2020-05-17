@@ -34,12 +34,11 @@ function appendMat(left) {
 }
 
 // const leftRandom = Math.round(Math.random() * 10) * 2
-// if(leftTies[leftRandom] !== undefined) {
-//     leftTies[leftRandom].classList.add("shrik")
-//     leftTies[leftRandom].nextElementSibling.classList.add("shrik")
-// }
-
-    //   const rightRandom = Math.round(Math.random() * 10)
-    //   if(rightTies[rightRandom] !== undefined) {
-    //       rightTies[rightRandom].classList.add("skew")
-    //   }
+let shrikSpots = document.querySelectorAll('.left-tie')
+for(let i = 0; i < shrikSpots.length; i++){
+    const number = i * 2 + i * Math.round(widthCounts);
+    if(number < heightCounts * widthCounts){
+        shrikSpots[number].classList.add('shrik')
+        shrikSpots[number].nextElementSibling.classList.add('shrik')
+    }
+}
