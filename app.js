@@ -32,3 +32,14 @@ function appendMat(left) {
         mat.appendChild(rightTie)
       }
 }
+
+// const leftRandom = Math.round(Math.random() * 10) * 2
+// if(leftTies[leftRandom] !== undefined) {
+//     leftTies[leftRandom].classList.add("shrik")
+//     leftTies[leftRandom].nextElementSibling.classList.add("shrik")
+// }
+
+    //   const rightRandom = Math.round(Math.random() * 10)
+    //   if(rightTies[rightRandom] !== undefined) {
+    //       rightTies[rightRandom].classList.add("skew")
+    //   }

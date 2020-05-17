@@ -2,6 +2,10 @@
     box-sizing: border-box;
     margin: 0;
 }
+
+body {
+  background-color: beige;
+}
     
 .mat {
     width: 100%;
@@ -57,9 +61,10 @@
 
 @keyframes skewing {
   from {
-    transform: scale(0.5)
+    transform: scale(0.5) skew(30deg, 10deg);
   }
   to {
-    transform: rotate(1);
+    transform: rotate(1) skew(-10deg, -30deg);
   }
 }
+
