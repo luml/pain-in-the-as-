@@ -50,6 +50,7 @@ body {
   }
 
   .shrik {
+    border-radius: 0;
     animation: shriking 1.0s ease-in infinite;
   }
 
@@ -74,10 +75,10 @@ body {
 @keyframes shriking {
   from {
     transform: scale(0.1);
-    background: yellow;
+    background: lightyellow;
   }
   to {
-    /* transform: rotate(); */
+    background: yellow;
   }
 }
 

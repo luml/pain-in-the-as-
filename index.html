@@ -9,29 +9,29 @@
 <body onload="changeColor()">
     <div class="mat"></div>
     <script src="./app.js"></script>
-<script>
-    var nIntervId
+    <script>
+      var nIntervId
+  
+      function changeColor() {
+        nIntervId = setInterval(flashText, 100)
+      }
  
-    function changeColor() {
-      nIntervId = setInterval(flashText, 100)
-    }
- 
-    function flashText() {
-      let leftTies = document.querySelectorAll('.left-tie')
-      leftTies.forEach(item => {
-        item.style.background = item.style.background == 'red' ? 'blue' : 'red'
-      })
+      function flashText() {
+        let leftTies = document.querySelectorAll('.left-tie')
+        leftTies.forEach(item => {
+          item.style.background = item.style.background == 'red' ? 'blue' : 'red'
+        })
 
-      let rightTies = document.querySelectorAll('.right-tie')
-      rightTies.forEach(item => {
-          item.style.background = item.style.background === 'teal' ? 'deeppink' : 'teal'
-      })
-    }
+        let rightTies = document.querySelectorAll('.right-tie')
+        rightTies.forEach(item => {
+            item.style.background = item.style.background === 'teal' ? 'deeppink' : 'teal'
+        })
+      }
  
-    function stopTextColor() {
-      clearInterval(nIntervId)
-    }
-  </script>
+      function stopTextColor() {
+        clearInterval(nIntervId)
+      }
+    </script>
 </body>
 </html>
  
