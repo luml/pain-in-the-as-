@@ -50,7 +50,7 @@ body {
   }
 
   .shrik {
-    border-radius: 0;
+    border-radius: 3rem;
     animation: shriking 1.0s ease-in infinite;
   }
 
@@ -81,4 +81,3 @@ body {
     background: yellow;
   }
 }
-

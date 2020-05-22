@@ -42,3 +42,10 @@ for(let i = 0; i < shrikSpots.length; i++){
         shrikSpots[number].nextElementSibling.classList.add('shrik')
     }
 }
+// for(let i = 0; i < shrikSpots.length; i++){
+//   const number = i * 3 + i * Math.round(widthCounts);
+//   if(number < heightCounts * widthCounts){
+//     shrikSpots[number].classList.add('shrik')
+//     shrikSpots[number].nextElementSibling.classList.add('shrik')
+//   }
+// }
